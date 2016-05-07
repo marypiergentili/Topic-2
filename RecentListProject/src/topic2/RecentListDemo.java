@@ -1,9 +1,5 @@
 package topic2;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class RecentListDemo {
 
 	public static void main(String[] args) {
@@ -15,6 +11,7 @@ public class RecentListDemo {
 		program.addFile(file1);
 		File file2= new File("Archivo 2");
 		program.addFile(file2);
+		//when i try to add the first file to the list it inserts in the fist place
 		program.addFile(file1);
 		//showing the recent file list
 		if(program.isLinkedListEmpty()==true)
@@ -22,10 +19,7 @@ public class RecentListDemo {
 		else
 			System.out.println(program.getFileList());
 		
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		Date date = new Date();
-		System.out.println(dateFormat.format(date));
-		
+	
 	}
 
 }
